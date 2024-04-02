@@ -5,7 +5,7 @@ then
   echo "nano is already installed."
 else
   echo "Installing nano."
-  apt install nano
+  apt install -y nano
 fi
 
 if (which git)
@@ -13,5 +13,5 @@ then
   echo "git is already installed."
 else
   echo "Installing git."
-  apt install git
+  apt install -y git
 fi
