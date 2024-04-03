@@ -14,3 +14,6 @@ A repo for cycle 8 of RelativePath
 ### On Darwin (Mac)
 
 `zsh setup-darwin.sh`
+
+# Find your machine usage
+` echo $(uname)`
