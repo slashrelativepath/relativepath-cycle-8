@@ -10,3 +10,7 @@ A repo for cycle 8 of RelativePath
 ### On Windows
 
 `set-executionpolicy bypass -scope process -force; ./setup-powershell.ps1`
+
+# Find your machine usage
+` echo $(uname)`
+
