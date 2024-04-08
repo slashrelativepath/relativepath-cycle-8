@@ -4,7 +4,7 @@ then
   echo "brew already installed"
 else
   echo "installing brew"
-  /bin/bash -y -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # code bock to install git if not already
