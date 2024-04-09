@@ -24,10 +24,21 @@ else
 
 if (get-command nano)
 {
-  echo "nano already installed"
+  echo "Nano already installed."
 }
 else
 {
-  echo "installing nano"
+  echo "Installing Nano..."
   choco install -y nano
+}
+
+
+if (get-command multipass)
+{
+  echo "Multipass already installed."
+}
+else
+{
+  echo "Installing Multipass..."
+  choco install -y multipass
 }
