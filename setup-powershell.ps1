@@ -40,5 +40,6 @@ if (get-command multipass)
 else
 {
   echo "Installing Multipass..."
-  choco install -y multipass
+  choco install -y virtualbox
+  choco install -y multipass --params="'/HyperVisor:VirtualBox'"
 }
