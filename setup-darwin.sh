@@ -1,4 +1,4 @@
-# local setup starting with pkg manager code block 
+# homebrew should be installed 
 if (which brew)
 then
   echo "brew already installed"
@@ -7,7 +7,7 @@ else
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-# code bock to install git if not already
+# git should be installed
 if (which git)
 then
   echo "git already installed"
@@ -16,11 +16,20 @@ else
   brew install git
 fi
 
-# code bock to install nano if not already
+# nano should be installed
 if (which nano)
 then
   echo "nano already installed" 
 else
   echo "installing nano"
   brew install nano
+fi
+
+# multipass should be installed
+if (multipass version)
+then
+  echo "multipass already installed"
+else
+  echo "Installing multipass"
+  brew install multipass
 fi
