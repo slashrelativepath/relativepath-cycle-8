@@ -11,6 +11,19 @@ A repo for cycle 8 of RelativePath
 
 `set-executionpolicy bypass -scope process -force; ./setup-powershell.ps1`
 
+#### Note on Networking
+When using virtualbox you may need to set your networking to bridged.
+
+find out what networks you have:
+`multipass networks`
+
+check the bridge network setting:
+`multipass get local.bridged-network`
+
+Set the bridge network to your active network:
+`multipass set local.bridged-network=Wi-Fi`
+
+
 # Find your machine usage
 ` echo $(uname)`
 
