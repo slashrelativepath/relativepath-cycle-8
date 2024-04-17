@@ -23,7 +23,10 @@ check the bridge network setting:
 Set the bridge network to your active network:
 `multipass set local.bridged-network=Wi-Fi`
 
+### Delete VM 
+`bash delete-vm.sh`
 
 # Find your machine usage
 ` echo $(uname)`
+
 
