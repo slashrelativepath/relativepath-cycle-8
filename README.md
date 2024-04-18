@@ -23,6 +23,9 @@ check the bridge network setting:
 Set the bridge network to your active network:
 `multipass set local.bridged-network=Wi-Fi`
 
+### Create VM
+`bash create-vm.sh`
+
 ### Delete VM 
 `bash delete-vm.sh`
 
